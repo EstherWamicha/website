@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>    
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width-device-width, initial scale=1.0"> 
+    <title>The music journey</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <div clas="container"> ]
+        <ul class="container">  
+         <li><a href="#">CONTACT</a></li> 
+         <li><a href="#">ABOUT</a></li>
+         <li><a href="#">ARTISTS</a></li> 
+         <li><a href="#">MUSIC</a></li> 
+         <li><a href="#">HOME</a></li> 
+        </ul> 
+        </div> 
+            
+
+           
+        <div class="container"></div>
+            <div class="left-col">
+                <h1>MY <br> PLAYLIST</h1>
+            </div> 
+
+
+            <div class="right-col">   
+
+
+                <p>Click here to listen</p> 
+
+                <img src="play 30.png"  id="icon"> 
+            </div> 
+        </div> 
+        <audio id="mysound"> 
+            <source src="Let Love Light The Way ❤️ _ Music Video _ Elena of Avalor _ Disney Junior.mp3" type="audio/mp3"> 
+        </audio> 
+        <script> 
+            let mysound = document.getElementById("mysound");
+            let icon = document.getElementById("icon"); 
+           // Creating a function that will change pause to play and vice-versa
+            icon.onclick = icon.onclick = function () { 
+            if (mysound.paused) {
+
+            // If paused then play the music and change the image 
+            mysound.play(); 
+            icon.src ="purple pause 16.jpg"; 
+            }  else {   
+
+            // If playing then pause the music and change the image
+            mysound.pause(); 
+            icon.src="play 30.png"; 
+            }   
+        }   
+        </script> 
+
+</body> 
+</html>     
